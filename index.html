@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Meade | Full-Stack Developer | MadeByMeade</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/ico" href="./Images/favicon.png">
+    <script src="./script.js"></script>
+    <!-- Google Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Logo Section-->
+        <div class="desktop-logo">
+            <a href="./index.html">
+                <img src="./Images/secondary-logo.png" alt="Company Logo">
+            </a>
+        </div>
+        <!-- Navigation -->
+        <nav aria-label="Navigation">
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+  
+    </header>
+
+    <!-- Main Section-->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>Sam Meade - Full-Stack Developer</h1>
+            <h2>Founder - MadeByMeade</h2>
+            <p>Crafted with code. Made By Meade.</p>
+
+            <!-- Hero Buttons -->
+            <div class="hero-buttons">
+                <a href="#projects" class="hero-button">VIEW PROJECTS</a>
+                <a href="#blog" class="hero-button">SUBSCRIBE TO BLOG</a>
+                <a href="./contact.html" class="hero-button">CONTACT ME</a>
+              </div>              
+        </section>
+
+        <!-- Projects Section -->
+        <section class="project-section">
+            <!-- Projects Header -->
+            <div class="project-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="filter-tabs">
+                    <button data-filter="all" class="active">All</button>
+                    <button data-filter="codecademy">Codecademy</button>
+                    <button data-filter="spec">Spec</button>
+                </div>
+            </div>
+            <!-- Projects Grid -->
+             <div class="project-grid">
+                <!-- Project 1 -->
+                <article class="featured-project" data-category="codecademy">
+                    <div class="project-image">
+                        <img src="./Images/Mixed-Messages-Project.png" alt="Mixed Messages JavaScript project screenshot">
+                        <div class="project-overlay">
+                            <div class="github-link">
+                                <a href="https://github.com/SamMeade24/MixedMessagesProject" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mixed Messages</h3>
+                        <p>A simple Node.js programme that generates a new message at random each time it runs by combining elements from different arrays. It’s a fun introduction to working with JavaScript functions, arrays, and randomness. My take on this project comes in the form of a fortune cookie generator.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Terminal</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 2 -->
+                <article class="featured-project" data-category="codecademy">
+                    <div class="project-image">
+                        <img src="./Images/Responsive-Club-Website.png" alt="Responsive Club Website homepage screenshot">
+                        <div class="project-overlay">
+                            <div class="website-link">
+                                <a href="https://sammeade24.github.io/ResponsiveClubWebsite.github.io/" target="_blank">Website</a>
+                            </div>
+                            <div class="github-link">
+                                <a href="https://github.com/SamMeade24/ResponsiveClubWebsite.github.io" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Responsive Club Website</h3>
+                        <p>A responsive website for a fictional club, designed using HTML and CSS. The project focuses on building structured layouts and ensuring mobile-friendly design through responsive techniques. I decided to build this project for my local social club.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">GitHub</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 3 -->
+                <article class="featured-project" data-category="codecademy">
+                    <div class="project-image">
+                        <img src="./Images/Company-Homepage.png" alt="Company Homepage project screenshot">
+                        <div class="project-overlay">
+                            <div class="website-link">
+                                <a href="http://sammeade24.github.io/CompanyHomePage.github.io/" target="_blank">Website</a>
+                            </div>
+                            <div class="github-link">
+                                <a href="https://github.com/SamMeade24/CompanyHomePage.github.io" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Company Homepage</h3>
+                        <p>A single-page company homepage built with HTML and CSS, focusing on clean layout, semantic structure, and modern visual design. The project emphasizes developing a professional, responsive front-end experience. For this project, I decided to use my wife's Gymnastic Business.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </article>
+             </div>
+        </section>
+
+        <!-- Skills Section -->
+         <section class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <img src="./Images/html5-icon.png" class="tech-icon" alt="HTML5 icon" title="HTML5">
+                <img src="./Images/css3-icon.png" class="tech-icon" alt="CSS3 icon" title="CSS3">
+                <img src="./Images/JavaScript-icon.png" class="tech-icon" alt="JavaScript icon" title="JavaScript">
+                <img src="./Images/terminal-icon.png" class="tech-icon" alt="Terminal icon" title="Terminal">
+                <img src="./Images/git-icon.png" class="tech-icon" alt="Git icon" title="Git">
+                <img src="./Images/GitHub-icon.png" class="tech-icon" alt="Github icon" title="Github">
+                <img src="./Images/node-js-icon.png" class="tech-icon" alt="NodeJS icon" title="Node JS">
+                <img src="./Images/google-chrome.png" class="tech-icon" alt="Chrome icon" title="Chrome">
+                <img src="./Images/stack-overflow-icon.png" class="tech-icon" alt="Stack Overflow icon" title="Stack Overflow">
+            </div>
+         </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <!-- Agency Details -->
+        <div class="agency-icons">
+            <h2>MadeByMeade</h2>
+            <a href="https://www.linkedin.com/in/sammeade/" target="_blank" aria-label="Linkedin">
+                <img src="./Images/linkedin-icon.png" class="agency-icon" alt="Linkedin icon">
+            </a>    
+            <a href="https://github.com/SamMeade24" target="_blank" aria-label="GitHub">
+                <img src="./Images/GitHub-icon.png" class="agency-icon" alt="GitHub icon">
+            </a> 
+            <a href="mailto:sammeade1990@outlook.com" target="_blank" aria-label="Email">
+                <img src="./Images/email-icon.png" class="agency-icon" alt="Email icon" title="Email">
+            </a>
+        </div>
+
+        <!-- Company Signature -->
+        <div class="web-signature">
+            <div id="copyright">
+                <h5>© MadeByMeade 2025</h5>
+            </div>
+
+            <div id="agency-signature">
+                <h5><a href="https://www.linkedin.com/in/sammeade/" target="_blank">Website by: MadeByMeade</a></h5>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
