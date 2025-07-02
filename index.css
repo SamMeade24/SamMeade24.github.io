@@ -462,6 +462,131 @@ nav a:hover {
     color: #D4AF37;
 }
 
+/* Blog Page: Template */ 
+
+.blog-post {
+    max-width: 720px;
+    margin: 3rem auto 6rem auto;
+    padding: 3rem 2.5rem 2rem 2.5rem;
+    background-color: #FDF9F4;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    font-family: 'Courier Prime', monospace;
+    color: #2a2a2a;
+    line-height: 1.7;
+    letter-spacing: 0.015em;
+    position: relative;
+    z-index: 0;
+}
+
+.blog-post > article > header {
+    margin-bottom: 20rem; 
+}
+
+.blog-post .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #A62C21;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    letter-spacing: 0.04em;
+}
+
+.blog-post h1,
+.blog-post h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #A62C21;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+}
+
+.blog-post h1 {
+    font-size: 3.2rem;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    border-left: 6px solid #A62C21;
+    padding-left: 0.5rem;
+}
+
+.blog-post h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #A62C21;
+    padding-bottom: 0.3rem;
+    letter-spacing: 0.03em;
+}
+
+.blog-post p {
+    font-size: 1.15rem;
+    margin-bottom: 1.8rem;
+    color: #333333;
+    font-weight: 400;
+}
+
+.blog-post ul {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    list-style-type: disc;
+}
+
+.blog-post ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.15rem;
+}
+
+.blog-post strong {
+    color: #A62C21;
+    font-weight: 700;
+}
+
+.blog-post blockquote {
+    margin: 2rem 0;
+    padding: 1.2rem 1.8rem;
+    background-color: #F6EADB;
+    border-left: 6px solid #A62C21;
+    font-style: italic;
+    color: #5a3b32;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.2rem;
+}
+
+.blog-post section {
+    margin-bottom: 4rem;
+}
+
+.blog-post section:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.blog-post section + section {
+    margin-top: 4rem;
+}
+
+.blog-post-footer {
+    margin-top: 4rem;
+    border-top: 1px solid #ccc;
+    padding-top: 3rem;
+    font-style: italic;
+    color: #222222;
+    font-size: 1.1rem;
+    font-family: 'Courier Prime', monospace;
+    line-height: 1.6;
+}
+
+.blog-post-footer .closing-phrase {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #A62C21;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    letter-spacing: 0.04em;
+}
+
 /* Contact Page */
 
 .contact-section {
@@ -606,6 +731,28 @@ footer {
   @media (max-width: 600px) {
     .blog-section .filter-tabs {
         margin-top: 0.5rem;
+    }
+
+    .blog-post {
+        padding: 2rem 1.5rem 2rem 1.5rem;
+        margin: 2rem 1rem 4rem 1rem;
+        font-size: 1rem;
+    }
+
+    .blog-post h1 {
+        font-size: 2.2rem;
+        padding-left: 0.4rem;
+        border-left-width: 4px;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5rem;
+        border-bottom-width: 2px;
+    }
+
+    .blog-post p,
+    .blog-post ul li {
+        font-size: 1rem;
     }
     
     .contact-form {
