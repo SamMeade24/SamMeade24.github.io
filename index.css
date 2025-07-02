@@ -290,6 +290,178 @@ nav a:hover {
     color: #D4AF37;
 }
 
+/* Blog Section */
+.blog-section {
+    background-color: #E4E2DD;
+    padding: 4rem 2rem;
+}
+
+.blog-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.blog-section .section-title {
+    font-size: 2rem;
+    color: #1B1F3B;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog-section .filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.blog-section .filter-tabs button {
+    background: none;
+    border: 2px solid #A62C21;
+    color: #A62C21;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.blog-section .filter-tabs button:hover {
+    background-color: #A62C21;
+    color: #F6EADB;
+}
+
+.blog-section .filter-tabs button.active {
+    background-color: #A62C21;
+    color: white;
+    border: none;
+}
+
+.blog-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.blog-grid .featured-blog {
+    background-color: #fff;
+    border: 1px solid #E4E2DD;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-grid .featured-blog:hover {
+    transform: translateY(-5px);
+}
+
+.blog-grid .blog-image {
+    position: relative;
+}
+
+.blog-grid .blog-image img {
+    width: 100%;
+    display: block;
+}
+
+.blog-grid .blog-content {
+    padding: 1rem;
+}
+
+.blog-grid .blog-content h3 {
+    color: #A62C21;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog-grid .blog-content p {
+    color: #333333;
+}
+
+.blog-grid .blog-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.blog-grid .blog-snippet {
+    color: #2C2C2C;
+    line-height: 1.5;
+}
+
+.subscribe-to-blog {
+    background-color: #F6EADB;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+    border-top: 1px solid #ddd;
+}
+
+.subscribe-to-blog h2 {
+    font-size: 2.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #A62C21;
+    margin-bottom: 1rem;
+}
+
+.subscribe-to-blog p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    color: #2C2C2C;
+    font-family: 'Courier Prime', monospace;
+}
+
+.blog-form {
+    max-width: 600px;
+    margin: 3rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(44, 44, 44, 0.15);
+    text-align: left;
+}
+
+.blog-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1rem;
+}
+
+.blog-form input:focus {
+    outline: none;
+    border-color: #A62C21;
+    box-shadow: 0 0 0 3px rgba(166, 44, 33, 0.2);
+}
+
+.blog-form .submit-button {
+    background-color: #A62C21;
+    color: #F6EADB;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blog-form .submit-button:hover {
+    background-color: #801f17;
+    color: #D4AF37;
+}
+
 /* Contact Page */
 
 .contact-section {
@@ -412,7 +584,6 @@ footer {
 
 /* Responsive Design */
 
-/* ========== Responsive Design ========== */
 @media (max-width: 768px) {
     .project-header,
     .about-me-tiles {
@@ -433,6 +604,10 @@ footer {
   }
 
   @media (max-width: 600px) {
+    .blog-section .filter-tabs {
+        margin-top: 0.5rem;
+    }
+    
     .contact-form {
       padding: 1.5rem;
     }

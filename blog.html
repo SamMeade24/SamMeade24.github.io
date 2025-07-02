@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | MadeByMeade</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/ico" href="./Images/favicon.png">
+    <script src="./script.js"></script>
+    <!-- Google Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Logo Section-->
+        <div class="desktop-logo">
+            <a href="./index.html">
+                <img src="./Images/secondary-logo.png" alt="Company Logo">
+            </a>
+        </div>
+        <!-- Navigation -->
+        <nav aria-label="Navigation">
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href=".blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+  
+    </header>
+
+    <!-- Main Section -->
+    <main role="main">
+        <!-- Blog Section -->
+        <section class="blog-section" role="region" aria-labelledby="blog-section-heading">
+            <!-- Blog Header -->
+            <div class="blog-section-header">
+                <h1 class="section-title">Blog</h1>
+                <div class="filter-tabs">
+                    <button data-filter="all" class="active">All</button>
+                    <button data-filter="creative-and-branding">Creative & Branding</button>
+                    <button data-filter="development-and-code">Development & Code</button>
+                    <button data-filter="agency-life-and-business">Agency Life & Business</button>
+                    <button data-filter="clients-and-projects">Clients & Projects</button>
+                    <button data-filter="tools-and-process">Tools & Process</button>
+                </div>
+            </div>
+            
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+                <!-- Most Recent Blog -->
+                <article class="featured-blog" data-category="agency-life-and-business">
+                    <div class="blog-image">
+                        <img src="./Images/how-i-got-here.png" alt="How I Got Here blog screenshot">
+                    </div>
+                    <div class="blog-content">
+                        <a href="blog-how-i-got-here.html">
+                            <h3>How I Got Here: The Story Behind Starting MadeByMeade</h3>
+                            <p>28 June 2025</p>
+                            <p>From freelance developer to creative studio founder — why I built something of my own, and how the brand reflects the journey.</p>
+                        </a>
+                    </div>
+                </article>
+      
+            <!-- Future blog posts can be added here in the same structure -->
+            </div>
+
+            <!-- Subscribe to Blog Form-->
+            <div class="subscribe-to-blog">
+                <h2>Stay in the Loop</h2>
+                <p>Subscribe to get the latest updates, code drops, and behind-the-scenes insights — straight to your inbox.</p>
+                <div class="blog-form">
+                    <form action="https://formsubmit.co/sammeade1990@outlook.com" method="POST">
+                        <input type="text" name="_name" required placeholder="Your Name" class="contact-input" autocomplete="name" aria-label="Your Name">
+                        <input type="email" name="_email" required placeholder="Your Email" class="contact-input" autocomplete="email" aria-label="Your Email">
+                        <input type="text" name="_subject" required placeholder="Subject" class="contact-subject" autocomplete="off" aria-label="Subject">
+                        <button type="submit" class="submit-button">Get in Touch</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>      
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <!-- Agency Details -->
+        <div class="agency-icons">
+            <h2>MadeByMeade</h2>
+            <a href="https://www.linkedin.com/in/sammeade/" target="_blank" aria-label="Linkedin">
+                <img src="./Images/linkedin-icon.png" class="agency-icon" alt="Linkedin icon">
+            </a>    
+            <a href="https://github.com/SamMeade24" target="_blank" aria-label="GitHub">
+                <img src="./Images/GitHub-icon.png" class="agency-icon" alt="GitHub icon">
+            </a> 
+            <a href="mailto:sammeade1990@outlook.com" target="_blank" aria-label="Email">
+                <img src="./Images/email-icon.png" class="agency-icon" alt="Email icon" title="Email">
+            </a>
+        </div>
+
+        <!-- Company Signature -->
+        <div class="web-signature">
+            <div id="copyright">
+                <h5>© MadeByMeade 2025</h5>
+            </div>
+
+            <div id="agency-signature">
+                <h5><a href="https://www.linkedin.com/in/sammeade/" target="_blank">Website by: MadeByMeade</a></h5>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
