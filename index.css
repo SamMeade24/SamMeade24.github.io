@@ -40,8 +40,9 @@ a:hover {
 header {
     background-color: #1B1F3B;
     color: #F6EADB;
-    height: 5.25rem;
-    padding: 1rem 1rem;
+    height: 80px;
+    min-height: 5.25rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +50,9 @@ header {
 }
   
 .desktop-logo img {
-    height: 50px;
+    height: 70px;
+    display: block;
+    margin: 0;
 }
   
 nav ul {
@@ -464,20 +467,40 @@ nav a:hover {
 
 /* Blog Page: Template */ 
 
+.blog-hero {
+    background-color: #A62C21;
+    color: #F6EADB;
+    padding: 3rem 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .blog-hero .blog-title {
+    padding-top: 5rem;
+    color: #F6EADB;
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.04em;
+  }
+  
+  .blog-hero .blog-date {
+    color: #F6EADB;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    opacity: 0.85;
+  }  
+
 .blog-post {
-    max-width: 720px;
-    margin: 3rem auto 6rem auto;
-    padding: 3rem 2.5rem 2rem 2.5rem;
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
     background-color: #FDF9F4;
-    border-radius: 10px;
+    padding: 3rem 2.5rem 2rem 2.5rem;
     box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-    font-family: 'Courier Prime', monospace;
-    color: #2a2a2a;
-    line-height: 1.7;
-    letter-spacing: 0.015em;
-    position: relative;
-    z-index: 0;
-}
+  }
 
 .blog-post > article > header {
     margin-bottom: 20rem; /* ensures header doesn't overlap content */
@@ -581,7 +604,7 @@ nav a:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 2rem;
-    color: #A62C21;
+    color: #1B1F3B;
     margin-top: 3rem;
     margin-bottom: 0;
     letter-spacing: 0.04em;
@@ -601,6 +624,46 @@ nav a:hover {
   
 .blog-post section:last-of-type h2 {
     margin-top: 4rem;
+}
+
+.blog-cta-link {
+    background-color: #1B1F3B;
+    color: #F6EADB;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 4rem;
+}
+
+.blog-cta-link h2 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.blog-cta-link p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-family: 'Courier Prime', monospace;
+}
+
+.cta-scroll-button {
+    background-color: #A62C21;
+    color: #F6EADB;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta-scroll-button:hover {
+    background-color: #801f17;
+    color: #D4AF37;
 }
   
 /* Contact Page */
@@ -726,6 +789,10 @@ footer {
 /* Responsive Design */
 
 @media (max-width: 768px) {
+    .desktop-logo img {
+        height: 60px;
+    }
+
     .project-header,
     .about-me-tiles {
       flex-direction: column;
