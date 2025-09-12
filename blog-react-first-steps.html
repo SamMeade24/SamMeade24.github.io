@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog: My First Steps into React | MadeByMeade</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" type="image/ico" href="./Images/favicon.png" />
+    <script src="./script.js"></script>
+    <!-- Google Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="desktop-logo">
+            <a href="./index.html">
+                <img src="./Images/secondary-logo.png" alt="Company Logo" />
+            </a>
+        </div>
+        <nav aria-label="Navigation">
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main role="main" class="blog-post">
+        <section class="blog-hero">
+            <h1 class="blog-title">My First Steps into React: A Learning Journal</h1>
+            <p class="blog-date">Published on 12th September, 2025</p>
+        </section>
+        
+        <article class="blog-post">
+            <section>
+                <p>It’s been a little while since my last blog post, but I wanted to share an update on where I’m at in my coding journey. As part of my Full Stack Developer course, I’ve recently made the jump into learning <strong>React</strong> — and I’m really enjoying the switch.</p>
+            </section>
+
+            <section>
+                <h2>What is React, and Why Learn It?</h2>
+                <p>For those who may not be familiar, React is a <strong>JavaScript library for building user interfaces</strong>, created by Facebook. It’s one of the most widely used tools in modern web development because it helps developers build apps that are fast, scalable, and easy to maintain.</p>
+                <p>The key idea is that instead of writing one big page of code (like with plain HTML, CSS, and JavaScript), you build your site using <strong>components</strong>. A component could be something as small as a button, or as large as an entire page section. These components can then be reused, updated, and combined to create more complex interfaces.</p>
+                <p>This approach makes React feel very different compared to vanilla JavaScript, where you often find yourself targeting elements manually with selectors and updating them directly. In React, the components take care of themselves — you just tell React how things <em>should look</em>, and it handles the updates behind the scenes.</p>
+            </section>
+
+            <section>
+                <h2>Returning to HTML & CSS (But With a Twist)</h2>
+                <p>One of the first things I noticed about React is how refreshing it feels to work with <strong>HTML-like elements again</strong>. In React, this happens through something called <strong>JSX</strong>, which looks like HTML but is written inside your JavaScript code.</p>
+                <p>For example, instead of creating an element with <code>document.createElement</code>, in React you can simply write:</p>
+                <pre><code>&lt;h1&gt;Hello, world!&lt;/h1&gt;</code></pre>
+                <br>
+                <p>That might look like plain HTML, but it’s actually JSX being compiled down into JavaScript. For me, this makes React feel natural, because it blends the familiarity of HTML and CSS with the power of JavaScript.</p>
+            </section>
+
+            <section>
+                <h2>Discovering My Passion for Front-End</h2>
+                <p>Whilst I’ve enjoyed learning JavaScript and getting comfortable writing in the console, I’m beginning to realise that my passion lies in the <strong>front end</strong>. There’s something exciting about seeing code instantly transform into something visual — a layout, a styled button, an interactive component.</p>
+                <p>React has brought that feeling back. Even the simplest examples feel rewarding, because I can see my work taking shape in a browser, not just in a terminal.</p>
+            </section>
+
+            <section>
+                <h2>Building on What I Already Know</h2>
+                <p>Another big positive: React doesn’t start from scratch. Everything I’ve learned so far with <strong>HTML, CSS, and vanilla JavaScript</strong> is required to learn React. Those building blocks carry over, but React pushes them further.</p>
+                <ul>
+                    <li><strong>HTML knowledge</strong> helps me understand JSX.</li>
+                    <li><strong>CSS knowledge</strong> helps me style components.</li>
+                    <li><strong>JavaScript knowledge</strong> helps me work with props, state, and logic that powers interactivity.</li>
+                </ul>
+                <p>That said, I’m still figuring out how it all connects together. The <strong>setup and structure of a React app</strong> — things like where files go, how components communicate, and how data flows — is still a bit hazy. But I know it’ll start making sense as I build more.</p>
+            </section>
+
+            <section>
+                <h2>Tools & First Impressions</h2>
+                <p>So far, I’ve been using <strong>Vite</strong> to set up my React projects. Compared to older tools like Create React App, Vite feels lightweight, modern, and easy to understand. It spins up a React environment quickly, which means I can focus more on learning React itself rather than wrestling with configuration.</p>
+                <p>At this stage, I don’t have any active React projects to share — but watch this space. I’m already brainstorming ideas, and I’m looking forward to creating something real with React soon.</p>
+            </section>
+
+            <section>
+                <h2>Looking Ahead</h2>
+                <p>This post is more of a <strong>checkpoint</strong> than a showcase. I wanted to get something out there (since it’s been a little while!) and mark this new stage of the journey.</p>
+                <p>Next time, I’ll aim to share a <strong>“Part 2”</strong> with some small React projects, where I can show more of what I’ve been building and learning.</p>
+                <p>For now, I’m just excited to be diving into React, enjoying the return to front-end development, and beginning to understand why React has become such a key part of modern web development.</p>
+            </section>
+
+            <section class="blog-cta-link">
+                <h2>Want more insights like this?</h2>
+                <p>Sign up below to stay updated with my latest posts and coding tips.</p>
+                <a href="blog.html#blog-signup" class="cta-scroll-button">Sign Up to the Blog</a>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="agency-icons">
+            <h2>MadeByMeade</h2>
+            <a href="https://www.linkedin.com/in/sammeade/" target="_blank" aria-label="Linkedin">
+                <img src="./Images/linkedin-icon.png" class="agency-icon" alt="Linkedin icon" />
+            </a>
+            <a href="https://github.com/SamMeade24" target="_blank" aria-label="GitHub">
+                <img src="./Images/GitHub-icon.png" class="agency-icon" alt="GitHub icon" />
+            </a>
+            <a href="mailto:sammeade1990@outlook.com" target="_blank" aria-label="Email">
+                <img src="./Images/email-icon.png" class="agency-icon" alt="Email icon" title="Email" />
+            </a>
+        </div>
+        <div class="web-signature">
+            <div id="copyright">
+                <h5>© MadeByMeade 2025</h5>
+            </div>
+            <div id="agency-signature">
+                <h5><a href="https://www.linkedin.com/in/sammeade/" target="_blank">Website by: MadeByMeade</a></h5>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
