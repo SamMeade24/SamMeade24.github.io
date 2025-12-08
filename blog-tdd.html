@@ -1,149 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Blog: How Test-Driven Development Shapes MadeByMeade | MadeByMeade</title>
-        <link rel="stylesheet" href="./index.css" />
-        <link rel="icon" type="image/ico" href="./Images/favicon.png" />
-        <script src="./script.js"></script>
-        <!-- Google Font Imports -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <!-- Header Section -->
-        <header>
-            <!-- Logo Section-->
-            <div class="desktop-logo">
-                <a href="./index.html">
-                    <img src="./Images/secondary-logo.png" alt="Company Logo" />
-                </a>
-            </div>
-            <!-- Navigation -->
-            <nav aria-label="Navigation">
-                <ul>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog: Exploring Test-Driven Development | MadeByMeade</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" type="image/ico" href="./Images/favicon.png" />
+    <script src="./script.js"></script>
+    <!-- Google Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="desktop-logo">
+            <a href="./index.html">
+                <img src="./Images/secondary-logo.png" alt="MadeByMeade Logo" />
+            </a>
+        </div>
+        <nav aria-label="Navigation">
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Main Section -->
-        <main role="main" class="blog-post">
-            <section class="blog-hero">
-                <h1 class="blog-title">Deepening Quality: How Test-Driven Development Shapes MadeByMeade’s Approach</h1>
-                <p class="blog-date">Published on 25th July, 2025</p>
+    <!-- Main Section -->
+    <main role="main" class="blog-post">
+        <section class="blog-hero">
+            <h1 class="blog-title">Exploring Test-Driven Development: My First Steps</h1>
+            <p class="blog-date">Published on 25th July, 2025</p>
+        </section>
+
+        <article class="blog-post">
+
+            <section>
+                <p>I’ve recently started experimenting with Test-Driven Development (TDD) as part of my coding journey, and it’s fascinating.</p>
+
+                <p>Instead of writing code first and testing later, TDD flips the process: you write tests that define what your code should do before actually building it. It feels a little backward at first, but already I can see how it encourages clear thinking and deliberate design.</p>
+
+                <p>Tools like Mocha make it easier to run tests and see where things might go wrong. Even for small projects, this approach is teaching me to plan my code more carefully and think about its behaviour before I start building.</p>
             </section>
-            
-            <article class="blog-post">
-                <section>
-                    <p>At MadeByMeade, delivering digital experiences that combine creativity with reliability is at the core of everything I do.</p>
 
-                    <p>Recently, I’ve been diving deeper into Test-Driven Development (TDD), an approach that flips the traditional coding process by writing tests before code. This method, supported by tools like Mocha, not only helps catch bugs early but also ensures that projects are built with maintainability and quality in mind.</p>
+            <section>
+                <h2>Why TDD is Exciting to Learn</h2>
+                <p>For me, the real excitement is in seeing problems early. Writing tests first forces me to think: “What should this do? What happens if it fails?”</p>
 
-                    <p>In this post, I’ll share why TDD matters in modern web development and how it’s shaping the way MadeByMeade approaches building for the web.</p>
-                </section>
+                <p>It makes me more intentional with each function, variable, and component. Even if the projects are tiny, it’s giving me a strong foundation and shaping how I approach coding challenges.</p>
+            </section>
 
-                <section>
-                    <h2>What is Test-Driven Development (TDD)?</h2>
-                    <p>Test-Driven Development is a workflow where developers write automated tests before writing the actual code. Instead of coding first and testing later, TDD encourages you to think about what your code needs to do upfront and define those expectations as tests.</p>
+            <section>
+                <h2>Early Experiments</h2>
+                <p>I’ve started applying TDD to simple projects — like small JavaScript functions or a mini message generator app. At first, writing the test feels slower, but passing the test gives such a satisfying confirmation that the code works exactly as expected.</p>
 
-                    <p>Then, you write just enough code to pass those tests, gradually building up a reliable, well-tested application. This approach might sound a bit backwards at first, but it brings clarity to the development process and helps prevent bugs before they even appear.</p>
-                </section>
+                <p>It’s helping me spot potential bugs before they appear in the interface and reinforcing a habit of thinking through the logic before coding. For someone still learning, that is gold.</p>
+            </section>
 
-                <section>
-                    <h2>Exploring Mocha as a Testing Tool</h2>
-                    <p>Mocha is one of the most popular JavaScript testing frameworks used for TDD. It provides a simple and flexible way to write tests, run them, and report results.</p>
+            <section>
+                <h2>What I’m Learning</h2>
+                <p>TDD is teaching me patience and discipline. I’m learning to:</p>
+                <ul>
+                    <li>Define clear expectations for my code before writing it.</li>
+                    <li>Break problems down into small, testable steps.</li>
+                    <li>Check my logic and structure methodically.</li>
+                    <li>Gain confidence that my code works as intended before seeing it in the browser.</li>
+                </ul>
+                <p>Even at this early stage, these habits are making my code cleaner and more reliable.</p>
+            </section>
 
-                    <p>With Mocha, developers can set up suites of tests that check different parts of an application, making it easier to catch issues early and keep the codebase healthy.</p>
+            <section>
+                <h2>Next Steps</h2>
+                <p>My plan is to keep exploring TDD in slightly bigger projects, maybe introducing React components next, and seeing how tests can guide my development. I’m curious to see how these practices can scale as my projects get more complex.</p>
 
-                    <p>By integrating Mocha into the workflow, MadeByMeade ensures that new features and updates don’t break existing functionality — a key part of delivering a smooth and dependable user experience.</p>
-                </section>
+                <p>For now, I’m enjoying the experimentation and learning — it’s rewarding, eye-opening, and shaping how I think about coding in ways I didn’t expect.</p>
+            </section>
 
-                <section>
-                    <h2>Why Testing Matters for Clients</h2>
-                    <p>For clients, the benefits of thorough testing go beyond just catching bugs. Here’s what TDD and testing bring to the table:</p>
-                    <ul>
-                        <li><strong>Fewer Bugs:</strong> Catch problems early, before they reach users.</li>
-                        <li><strong>Easier Maintenance:</strong> Well-tested code is simpler to update and extend.</li>
-                        <li><strong>Greater Confidence:</strong> Knowing the code works as expected reduces surprises during deployment.</li>
-                    </ul>
-                    <p>This translates to projects that are more stable, easier to improve over time, and ultimately more valuable for clients.</p>
-                </section>
+            <section class="blog-post-footer">
+                <p>Thanks for reading and following along with this early stage of my journey.<br />
+                If you’re learning TDD or just curious, I hope this inspires you to give it a try.</p>
 
-                <section>
-                    <h2>Aligning with MadeByMeade’s Mission</h2>
-                    <p>At MadeByMeade, craftsmanship means more than just great design and development — it’s about building solutions that last.</p>
+                <p>Let’s continue building with intention.</p>
 
-                    <p>Embracing practices like Test-Driven Development reflects a commitment to quality and continuous improvement. It’s an investment in delivering work that I’m proud of and that clients can rely on.</p>
-                </section>
+                <p class="closing-phrase">— Sam Meade<br />
+                Developer in Training at MadeByMeade</p>
+            </section>
 
-                <section>
-                    <h2>Conclusion</h2>
-                    <p>Test-Driven Development is shaping how MadeByMeade approaches web development — combining creativity with solid engineering principles.</p>
+            <section class="blog-cta-link">
+                <h2>Want more insights like this?</h2>
+                <p>Sign up below to stay updated with my latest posts and coding tips.</p>
+                <a href="blog.html#blog-signup" class="cta-scroll-button">Sign Up to the Blog</a>
+            </section>
 
-                    <p>I’m excited to continue exploring these practices and bringing even more reliability and quality to future projects.</p>
+        </article>
+    </main>
 
-                    <p>If you’re interested in how testing can improve your own development work, I encourage you to dive in and give TDD a try. And stay tuned here for more insights and updates on MadeByMeade’s journey.</p>
-                </section>
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="agency-icons">
+            <h2>MadeByMeade</h2>
+            <a href="https://www.linkedin.com/in/sammeade/" target="_blank" aria-label="Linkedin">
+                <img src="./Images/linkedin-icon.png" class="agency-icon" alt="Linkedin icon" />
+            </a>
+            <a href="https://github.com/SamMeade24" target="_blank" aria-label="GitHub">
+                <img src="./Images/GitHub-icon.png" class="agency-icon" alt="GitHub icon" />
+            </a>
+            <a href="mailto:sammeade1990@outlook.com" target="_blank" aria-label="Email">
+                <img src="./Images/email-icon.png" class="agency-icon" alt="Email icon" title="Email" />
+            </a>
+        </div>
 
-                <section class="blog-post-footer">
-                    <p>Thanks for reading!<br />
-                    Whether you’re a fellow developer, a future client, or just curious about quality development, I’m glad you’re here.</p>
-                    
-                    <p>Let’s build something that matters.</p>
-                    
-                    <p class="closing-phrase">— Sam Meade<br />
-                    Founder &amp; Full-Stack Developer at MadeByMeade</p>
-                </section>
-
-                <section class="blog-cta-link">
-                    <h2>Want more insights like this?</h2>
-                    <p>Sign up below to stay updated with my latest posts and coding tips.</p>
-                    <a href="blog.html#blog-signup" class="cta-scroll-button">Sign Up to the Blog</a>
-                </section>
-            </article>
-        </main>
-
-        <!-- Footer -->
-        <footer role="contentinfo">
-            <!-- Agency Details -->
-            <div class="agency-icons">
-                <h2>MadeByMeade</h2>
-                <a href="https://www.linkedin.com/in/sammeade/" target="_blank" aria-label="Linkedin">
-                    <img src="./Images/linkedin-icon.png" class="agency-icon" alt="Linkedin icon" />
-                </a>
-                <a href="https://github.com/SamMeade24" target="_blank" aria-label="GitHub">
-                    <img src="./Images/GitHub-icon.png" class="agency-icon" alt="GitHub icon" />
-                </a>
-                <a href="mailto:sammeade1990@outlook.com" target="_blank" aria-label="Email">
-                    <img src="./Images/email-icon.png" class="agency-icon" alt="Email icon" title="Email" />
-                </a>
+        <div class="web-signature">
+            <div id="copyright">
+                <h5>© MadeByMeade 2025</h5>
             </div>
 
-            <!-- Company Signature -->
-            <div class="web-signature">
-                <div id="copyright">
-                    <h5>© MadeByMeade 2025</h5>
-                </div>
-
-                <div id="agency-signature">
-                    <h5>
-                        <a href="https://www.linkedin.com/in/sammeade/" target="_blank">Website by: MadeByMeade</a>
-                    </h5>
-                </div>
+            <div id="agency-signature">
+                <h5><a href="https://www.linkedin.com/in/sammeade/" target="_blank">Website by: MadeByMeade</a></h5>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
 </html>
