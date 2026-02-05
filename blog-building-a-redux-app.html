@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog: Building a Redux App Without the API I Was Meant to Use | MadeByMeade</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" type="image/ico" href="./Images/favicon.png" />
+    <script src="./script.js"></script>
+
+    <!-- Google Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="desktop-logo">
+            <a href="./index.html">
+                <img src="./Images/secondary-logo.png" alt="MadeByMeade Logo" />
+            </a>
+        </div>
+        <nav aria-label="Navigation">
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main role="main" class="blog-post">
+        <section class="blog-hero">
+            <h1 class="blog-title">Building a Redux App Without the API I Was Meant to Use</h1>
+            <p class="blog-date">Published on 5th February, 2026</p>
+        </section>
+
+        <article class="blog-post">
+            <section>
+                <p>When I started this project, the goal was clear: build a Reddit client application using React and Redux as part of the Codecademy Full-Stack Engineer Career Path.</p>
+                <p>The brief assumed access to the Reddit API. In reality, by the time I reached this project, the required endpoints were no longer publicly accessible without authentication or paid access.</p>
+                <p>At that point, I had two choices - abandon the project, or adapt it in a way that still demonstrated the intended skills. I chose the second option.</p>
+            </section>
+
+            <section>
+                <h2>Adapting the Brief Without Losing the Point</h2>
+                <p>Rather than focusing on API wiring, I reframed the problem around what the project was actually trying to teach:</p>
+                <p>Global state management with Redux, async request lifecycles, UI state handling (loading, error, empty states), component architecture, testing, and deployment.</p>
+                <p>The application was restructured to simulate a Reddit-style experience, with posts and comments managed through Redux slices and async thunks that mirror real API behaviour.</p>
+                <p>This allowed me to focus on state design and data flow - which turned out to be the most challenging and valuable part of the project.</p>
+            </section>
+
+            <section>
+                <h2>The Jump From Tutorial to Application Is Real</h2>
+                <p>This was the first project where the gap between “following along” and “building something” really hit.</p>
+                <p>Redux, in particular, forced me to think carefully about where state should live, how slices interact, how UI reacts to async changes, and how to test behaviour rather than implementation.</p>
+                <p>I struggled — a lot. But that struggle exposed gaps in my understanding that I wouldn’t have noticed otherwise.</p>
+            </section>
+
+            <section>
+                <h2>Testing and Deployment Changed Everything</h2>
+                <p>Writing unit tests and end-to-end tests made weaknesses in my assumptions obvious very quickly.</p>
+                <p>Deployment was another wake-up call: ESLint warnings failing CI, differences between local and production environments, and the need to pay attention to performance and accessibility.</p>
+                <p>These are things tutorials rarely emphasise, but they matter in real projects.</p>
+            </section>
+
+            <section>
+                <h2>What This Project Represents</h2>
+                <p>This app isn’t impressive because of what it looks like. It’s valuable because of what it represents.</p>
+                <p>Adapting to real-world constraints, finishing a project when the path isn’t straightforward, learning how tooling, testing, and deployment fit together — and shipping something that works.</p>
+                <p>That, to me, is what learning to be a developer actually looks like.</p>
+            </section>
+
+            <section class="blog-post-footer">
+                <p>
+                    Thanks for reading and following along with this part of my journey.<br />
+                    This project pushed me more than any tutorial ever could — and I’m better for it.
+                </p>
+
+                <p class="closing-phrase">
+                    — Sam Meade<br />
+                    Full-Stack Developer in Training at MadeByMeade
+                </p>
+            </section>
+
+            <section class="blog-cta-link">
+                <h2>Want more insights like this?</h2>
+                <p>Follow my progress as I continue building, breaking, and learning.</p>
+                <a href="blog.html#blog-signup" class="cta-scroll-button">Sign Up to the Blog</a>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="agency-icons">
+            <h2>MadeByMeade</h2>
+            <a href="https://www.linkedin.com/in/sammeade/" target="_blank" aria-label="Linkedin">
+                <img src="./Images/linkedin-icon.png" class="agency-icon" alt="Linkedin icon" />
+            </a>
+            <a href="https://github.com/SamMeade24" target="_blank" aria-label="GitHub">
+                <img src="./Images/GitHub-icon.png" class="agency-icon" alt="GitHub icon" />
+            </a>
+            <a href="mailto:sammeade1990@outlook.com" target="_blank" aria-label="Email">
+                <img src="./Images/email-icon.png" class="agency-icon" alt="Email icon" title="Email" />
+            </a>
+        </div>
+
+        <div class="web-signature">
+            <div id="copyright">
+                <h5>© MadeByMeade 2026</h5>
+            </div>
+
+            <div id="agency-signature">
+                <h5>
+                    <a href="https://www.linkedin.com/in/sammeade/" target="_blank">
+                        Website by: MadeByMeade
+                    </a>
+                </h5>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
