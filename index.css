@@ -513,7 +513,7 @@ nav a:hover {
   }
 
 .blog-post > article > header {
-    margin-bottom: 20rem; /* ensures header doesn't overlap content */
+    margin-bottom: 6rem;
 }
 
 .blog-post .subtitle {
@@ -584,6 +584,7 @@ nav a:hover {
     color: #5a3b32;
     font-family: 'Courier Prime', monospace;
     font-size: 1.2rem;
+    word-wrap: break-word;
 }
 
 .blog-post section {
@@ -818,6 +819,10 @@ footer {
     .image-section img {
       height: auto;
       max-width: 100%;
+    }
+
+    .blog-post > article > header {
+        margin-bottom: 4rem;
     }
   }
 
