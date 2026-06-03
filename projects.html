@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | MadeByMeade</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/ico" href="./Images/favicon.png">
+    <script src="./script.js"></script>
+    <!-- Google Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="desktop-logo">
+            <a href="./index.html">
+                <img src="./Images/secondary-logo.png" alt="MadeByMeade Logo">
+            </a>
+        </div>
+        <nav aria-label="Navigation">
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main role="main">
+        <section class="projects-section" role="region" aria-labelledby="projects-section-heading">
+            <div class="projects-section-header">
+                <h1 class="section-title">Projects</h1>
+                <p class="projects-intro">A selection of projects I've built while progressing through the Codecademy Full-Stack Career Path and developing my skills as a full-stack developer.</p>
+                <div class="filter-tabs">
+                    <button data-filter="all" class="active">All</button>
+                    <button data-filter="frontend">Front-End</button>
+                    <button data-filter="backend">Back-End</button>
+                    <button data-filter="fullstack">Full-Stack</button>
+                    <button data-filter="codecademy">Codecademy</button>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <article class="featured-project" data-category="codecademy">
+                    <div class="project-image">
+                        <img src="./Images/Mixed-Messages-Project.png" alt="Mixed Messages project screenshot">
+                    </div>
+                
+                    <div class="project-content">
+                        <h3>Mixed Messages</h3>
+                        <p></p>A Node.js programme generating a new message each time by combining different elements—a fortune cookie generator I built while learning JavaScript.</p>
+                
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Terminal</span>
+                        </div>
+                
+                        <div class="project-links">
+                            <a href="./mixed-messages.html">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-project" data-category="codecademy">
+                    <div class="project-image">
+                        <img src="./Images/Responsive-Club-Website.jpg" alt="Responsive Club Website homepage screenshot">
+                    </div>
+                
+                    <div class="project-content">
+                        <h3>Responsive Club Website</h3>
+                        <p>A responsive website for a fictional club, built with HTML and CSS as part of my hands-on web development practice.</p>
+                
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">GitHub</span>
+                        </div>
+                
+                        <div class="project-links">
+                            <a href="./responsive-club-website.html">Read More</a>
+                            <a href="https://sammeade24.github.io/ResponsiveClubWebsite.github.io/" target="_blank" rel="noopener">Live Site</a>
+                            <a href="https://github.com/SamMeade24/ResponsiveClubWebsite.github.io" target="_blank" rel="noopener">View Code</a>
+                        </div>
+                    </div>
+                </article>              
+
+                <article class="featured-project" data-category="codecademy">
+                    <div class="project-image">
+                        <img src="./Images/Company-Homepage.png" alt="Company Homepage project screenshot">
+                    </div>
+                
+                    <div class="project-content">
+                        <h3>Company Homepage</h3>
+                        <p>A single-page homepage for a gymnastics business, built with HTML and CSS to practise clean layouts and responsive design.</p>
+                
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                
+                        <div class="project-links">
+                            <a href="./company-homepage.html">Read More</a>
+                            <a href="http://sammeade24.github.io/CompanyHomePage.github.io/" target="_blank" rel="noopener">Live Site</a>
+                            <a href="https://github.com/SamMeade24/CompanyHomePage.github.io" target="_blank" rel="noopener">View Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Get in Touch CTA -->
+            <div class="projects-cta">
+                <h2>Interested in Working Together?</h2>
+                <p>I'm currently building projects while developing my full-stack skills. If you'd like to discuss a project or opportunity, I'd love to hear from you.</p>
+                <a href="./contact.html" class="submit-button">Get In Touch</a>
+            </div>
+        </section>
+    </main>      
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="social-icons">
+            <h2>MadeByMeade</h2>
+            <a href="https://www.linkedin.com/in/sammeade/" target="_blank" rel="noopener" aria-label="Linkedin">
+                <img src="./Images/linkedin-icon.png" class="agency-icon" alt="Linkedin icon">
+            </a>    
+            <a href="https://github.com/SamMeade24" target="_blank" rel="noopener" aria-label="GitHub">
+                <img src="./Images/GitHub-icon.png" class="agency-icon" alt="GitHub icon">
+            </a> 
+            <a href="mailto:sammeade1990@outlook.com" target="_blank" rel="noopener" aria-label="Email">
+                <img src="./Images/email-icon.png" class="agency-icon" alt="Email icon" title="Email">
+            </a>
+        </div>
+
+        <div class="web-signature">
+            <div id="copyright">
+                <h5>© MadeByMeade 2025</h5>
+            </div>
+            <div id="agency-signature">
+                <h5><a href="https://www.linkedin.com/in/sammeade/" target="_blank" rel="noopener">Built and documented by Sam Meade</a></h5>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
