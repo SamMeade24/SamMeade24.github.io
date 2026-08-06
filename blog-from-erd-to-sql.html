@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sam Meade shares the beginning of his web development journey, early projects, and learning experiences at MadeByMeade.">
+    <title>Blog: How I Got Here | MadeByMeade</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" type="image/ico" href="./Images/favicon.png" />
+    <script src="./script.js"></script>
+    <!-- Google Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="desktop-logo">
+            <a href="./index.html">
+                <img src="./Images/secondary-logo.png" alt="MadeByMeade Logo" />
+            </a>
+        </div>
+        <nav aria-label="Navigation">
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main role="main" class="blog-post">
+
+        <section class="blog-hero">
+            <h1 class="blog-title">From ERDs to SQL: Building My First Relational Database</h1>
+            <p class="blog-date">Published on 2nd August, 2026</p>
+        </section>
+
+        <article class="blog-post" role="article">
+            <section>
+                <p>When I first started the Back-End Development section of the Codecademy Full-Stack Career Path, SQL felt like another language to learn. I could write individual queries and understand the syntax, but I hadn't yet experienced what it was like to build a complete database from scratch.</p>
+                <p>That changed with my Arsenal Club Database project. Rather than working with an existing dataset, I was responsible for designing the entire database, deciding how information should relate to one another, creating the schema, populating the tables, and finally writing SQL queries against my own data.</p>
+                <p>Looking back, this was one of the most rewarding projects I've completed so far because it brought together everything I'd learned about relational databases into one complete application.</p>
+            </section>
+
+            <section>
+                <h2>Starting with the Design</h2>
+                    <p>One of the biggest lessons I learned was that good SQL starts long before the first query is written. Before opening PostgreSQL, I spent time planning the database structure using an Entity Relationship Diagram (ERD).</p>
+                    <p>Thinking carefully about entities, relationships, primary keys and foreign keys made the implementation process much smoother. It also highlighted how much planning goes into designing scalable databases before any data is ever inserted.</p>
+                    <p>Spending extra time on the design saved me countless hours later when creating relationships between clubs, players, managers, matches, transfers and competitions.</p>
+            </section>
+
+            <section>
+                <h2>Building the Database</h2>
+                <p>After completing the design, I implemented the schema in PostgreSQL, creating thirteen relational tables and defining the relationships between them using primary and foreign keys.</p>
+                <p>I also populated every table with realistic football data. Rather than generating random values, I used current Premier League clubs, players, managers and transfers to make the database feel authentic while keeping the scope manageable.</p>
+                <p>Testing the database in Postbird became an important part of the development process. It allowed me to validate relationships, troubleshoot foreign key constraints and refine the schema as new requirements emerged.</p>
+            </section>
+
+            <section>
+                <h2>Where SQL Started to Click</h2>
+                <p>The most satisfying part of the project came once the database had been populated. Writing SQL queries against data that I had designed myself felt completely different to working through isolated exercises.</p>
+                <p>Using joins to connect multiple tables, grouping data with aggregate functions and applying conditional logic using CASE statements demonstrated how powerful SQL can be when supported by a well-designed database.</p>
+                <p>By the end of the project, SQL no longer felt like a collection of commands. Instead, it became a tool for answering meaningful questions using structured data.</p>
+            </section>
+
+            <section>
+                <h2>Looking Ahead</h2>
+                <p>This project has given me a much stronger appreciation for back-end development. It's one thing to learn SQL syntax, but it's another to understand why databases are designed the way they are and how thoughtful planning makes querying simpler later on.</p>
+                <p>More importantly, it has given me confidence heading into larger full-stack projects. Designing a relational database from scratch has shown me that good software isn't just about writing code—it's about modelling real-world problems in a logical, maintainable way.</p>
+                <p>As I continue through the Codecademy Full-Stack Career Path, I'll undoubtedly build larger and more complex applications, but I suspect this project will always stand out as the point where database design really started to make sense.</p>
+            </section>
+
+            <section class="blog-post-footer">
+                <p>Every project teaches something different. This one taught me that successful back-end development starts with planning, thoughtful design and an understanding of how data fits together.</p>
+                <p>If you've recently started learning SQL, I'd strongly recommend building your own database rather than only working through exercises. Creating something from scratch reinforces concepts in a way that tutorials simply can't.</p>
+                <p class="closing-phrase">
+                    — Sam Meade<br>
+                    Full-Stack Developer in Training at MadeByMeade
+                </p>
+            </section>
+
+            <section class="blog-cta-link">
+                <h2>Want to see the finished project?</h2>
+                <p>Read the full Arsenal Club Database case study, explore the GitHub repository and follow my progress through the Codecademy Full-Stack Career Path.</p>
+                <a href="./project-arsenal-club-database.html"
+                class="cta-scroll-button"
+                role="button">
+                View the Project
+                </a>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="social-icons">
+            <h2>MadeByMeade</h2>
+            <a href="https://www.linkedin.com/in/sammeade/" target="_blank" aria-label="Linkedin">
+                <img src="./Images/linkedin-icon.png" class="agency-icon" alt="Linkedin icon" />
+            </a>
+            <a href="https://github.com/SamMeade24" target="_blank" aria-label="GitHub">
+                <img src="./Images/GitHub-icon.png" class="agency-icon" alt="GitHub icon" />
+            </a>
+            <a href="mailto:sammeade1990@outlook.com" target="_blank" aria-label="Email">
+                <img src="./Images/email-icon.png" class="agency-icon" alt="Email icon" title="Email" />
+            </a>
+        </div>
+
+        <div class="web-signature">
+            <div id="copyright">
+                <h5>© MadeByMeade 2025</h5>
+            </div>
+
+            <div id="agency-signature">
+                <h5><a href="https://www.linkedin.com/in/sammeade/" target="_blank">Built and documented by Sam Meade</a></h5>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
