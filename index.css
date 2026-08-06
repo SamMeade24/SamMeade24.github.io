@@ -303,6 +303,130 @@ nav a:hover {
     color: #D4AF37;
 }
 
+/* Project Page: Template */
+
+.project-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.project-summary {
+    margin: 1.5rem 0;
+}
+
+.project-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+}
+
+.project-hero-content {
+    flex: 1;
+}
+
+.project-hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.project-hero-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+}
+
+.tech-stack {
+    margin: 2rem 0;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.project-section {
+    margin-bottom: 5rem;
+}
+
+.project-section p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.project-image-large {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.project-image-large img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+}
+
+.project-image-large figcaption {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.project-list {
+    padding-left: 1.5rem;
+    line-height: 1.8;
+}
+
+.sql-example {
+    margin: 3rem 0;
+}
+
+.sql-example pre {
+    background: #1f1f1f;
+    color: #f4f4f4;
+    padding: 1.5rem;
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+.sql-example code {
+    font-family: "Courier Prime", monospace;
+}
+
+.project-status {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.project-navigation {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.project-navigation p {
+    margin-bottom: 2rem;
+}
+
+.project-navigation .project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.status-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
 /* Blog Section */
 .blog-section {
     background-color: #E4E2DD;

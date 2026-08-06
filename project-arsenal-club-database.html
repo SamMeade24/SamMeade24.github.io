@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A case study documenting the design and development of the Arsenal Club Database, a fully normalised PostgreSQL database built as part of the Codecademy Full-Stack Career Path.">
+    <title>Arsenal Club Database | MadeByMeade</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/ico" href="./Images/favicon.png">
+    <script src="./script.js"></script>
+    <!-- Google Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="desktop-logo">
+            <a href="./index.html">
+                <img src="./Images/secondary-logo.png" alt="MadeByMeade Logo">
+            </a>
+        </div>
+
+        <nav aria-label="Navigation">
+            <ul>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main role="main" class="project-page">
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="project-hero-content">
+                <p class="project-type">Codecademy Back-End Development Project</p>
+                <h1>Arsenal Club Database</h1>
+                <p class="project-summary">A fully normalised PostgreSQL database modelling a professional football club, designed using relational database principles and populated with realistic football data.</p>
+        
+                <div class="tech-stack">
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Database Design</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">GitHub</span>
+                </div>
+        
+                <div class="project-buttons">
+                    <a href="https://github.com/SamMeade24/arsenal-club-database" target="_blank" rel="noopener" class="hero-button">View on GitHub</a>
+                    <a href="#about-project" class="hero-button">Read Case Study</a>
+                </div>
+            </div>
+        
+            <div class="project-hero-image">
+                <img src="./Images/arsenal-club-database-erd.png" alt="Entity Relationship Diagram for the Arsenal Club Database">
+            </div>
+        </section>
+
+        <!-- About the Project -->
+        <section id="about-project" class="project-section">
+            <h2>About the Project</h2>
+            <p>As part of the Codecademy Full-Stack Career Path, I was challenged to design and build a relational database from scratch using PostgreSQL. Rather than modelling a fictional business, I wanted to create something based on a subject I genuinely enjoy and could stay engaged with throughout the project.</p>
+            <p>Football was the obvious choice, and I decided to build a database centred around Arsenal and the wider Premier League. The aim was to design a well-structured database capable of storing information about clubs, players, managers, competitions, matches, transfers and awards while applying the principles of database normalisation and relational design.</p>
+            <p>Throughout the project I focused on creating a database that was realistic enough to demonstrate practical SQL skills, while deliberately keeping the scope manageable. This meant making considered design decisions about what to include, avoiding unnecessary complexity, and producing a finished project that clearly demonstrates my understanding of relational databases.</p>
+        </section>
+
+        <!-- The Challenge -->
+        <section class="project-section">
+            <h2>The Challenge</h2>
+            <p>The objective was to design a relational database that accurately modelled a professional football club while demonstrating the core principles of database design. From the outset, I wanted the project to feel realistic without becoming unnecessarily complex.</p>
+            <p>One of the biggest challenges was deciding where to draw the line. Football generates an enormous amount of data, from detailed player statistics and match events to contracts, injuries and scouting information. Rather than attempting to model every possible scenario, I focused on creating a well-balanced database that showcased strong relational design and SQL skills within a manageable scope.</p>
+            <p>Throughout development I made deliberate decisions about the database structure, normalising tables to reduce redundancy, using junction tables to model many-to-many relationships, and selecting representative seed data that demonstrated the database's capabilities without overwhelming the project.</p>
+            <p>This approach allowed me to concentrate on building a clean, well-structured database that effectively demonstrates relational modelling, data integrity and practical SQL querying, while remaining true to the objectives of the project.</p>
+        </section>
+
+        <!-- Planning & Design -->
+        <section class="project-section">
+            <h2>Planning & Design</h2>
+            <p>Before writing any SQL, I spent time planning the structure of the database. Using dbdiagram.io, I designed an Entity Relationship Diagram (ERD) to define the entities, relationships and constraints that would form the foundation of the project.</p>
+            <p>Creating the ERD first helped identify the relationships between tables, determine where primary and foreign keys were required, and ensure the database followed normalisation principles before any implementation began.</p>
+            
+            <figure class="project-image-large">
+                <img src="./Images/arsenal-club-database-erd.png" alt="Entity Relationship Diagram for the Arsenal Club Database">
+                <figcaption>Entity Relationship Diagram (ERD) designed during the planning phase using dbdiagram.io.</figcaption>
+            </figure>
+
+            <h3>Key Design Decisions</h3>
+            <ul class="project-list">
+                <li>Designed a fully normalised relational database consisting of 13 interconnected tables.</li>
+                <li>Used primary and foreign keys to maintain referential integrity across the database.</li>
+                <li>Implemented junction tables to model many-to-many relationships between players, positions and matches.</li>
+                <li>Created representative seed data to demonstrate realistic relationships without unnecessarily increasing the project's complexity.</li>
+            </ul>
+        </section>
+
+        <!-- Building the Database -->
+        <section class="project-section">
+            <h2>Building the Database</h2>
+            <p>With the database design complete, I began implementing the schema in PostgreSQL. Each table was created using SQL, with carefully defined primary and foreign keys to enforce relationships and maintain data integrity throughout the database.</p>
+            <p>Once the schema was in place, I populated the database with representative seed data covering stadiums, clubs, players, managers, competitions, matches, transfers and awards. Rather than aiming to replicate every aspect of professional football, I focused on creating enough realistic data to demonstrate meaningful relationships and produce useful query results.</p>
+            <p>Throughout development, I tested the database using Postbird, validating relationships, resolving foreign key constraints and refining the schema as the project evolved. This iterative process helped reinforce the importance of careful database planning and highlighted how small design decisions can have a significant impact on the overall structure of a relational database.</p>
+
+            <figure class="project-image-large">
+                <img src="./Images/arsenal-club-database-postbird.png" alt="Postbird displaying the Arsenal Club Database">
+                <figcaption>Building and testing the Arsenal Club Database in PostgreSQL using Postbird.</figcaption>
+            </figure>
+
+            <h3>Implementation Highlights</h3>
+            <ul class="project-list">
+                <li>Created 13 relational database tables using PostgreSQL.</li>
+                <li>Implemented primary and foreign key constraints to maintain referential integrity.</li>
+                <li>Modelled many-to-many relationships using junction tables.</li>
+                <li>Populated the database with realistic seed data across every table.</li>
+                <li>Tested and validated SQL queries throughout development using Postbird.</li>
+            </ul>
+        </section>
+
+        <!-- SQL Showcase -->
+        <section class="project-section">
+            <h2>SQL Showcase</h2>
+            <p>Once the database had been designed and populated, I wrote a range of SQL queries to retrieve, analyse and summarise the data. These queries demonstrate the core SQL concepts covered throughout the project, including joins, aggregation, filtering and conditional logic.</p>
+            <p>Below are a selection of queries that highlight some of the techniques used throughout the project.</p>
+
+            <div class="sql-example">
+                <h3>Displaying Player Transfers</h3>
+                <p>This query joins three tables to display each player's transfer alongside their selling club, buying club and transfer fee.</p>
+                <pre><code>
+                    SELECT
+                        player.first_name,
+                        player.last_name,
+                        selling_club.name AS selling_club,
+                        buying_club.name AS buying_club,
+                        transfer.transfer_value AS transfer_fee
+                    FROM transfer
+                    JOIN player
+                        ON transfer.player_id = player.player_id
+                    JOIN club AS selling_club
+                        ON transfer.from_club_id = selling_club.club_id
+                    JOIN club AS buying_club
+                        ON transfer.to_club_id = buying_club.club_id
+                    ORDER BY transfer_fee DESC;
+                </code></pre>
+            </div>
+
+            <div class="sql-example">
+                <h3>Counting Players at Each Club</h3>
+                <p>Demonstrates aggregation using <code>COUNT()</code> together with <code>GROUP BY</code>.</p>
+                <pre><code>
+                    SELECT
+                        club.name,
+                        COUNT(player.player_id) AS player_count
+                    FROM club
+                    JOIN player
+                        ON club.club_id = player.club_id
+                    GROUP BY club.name
+                    ORDER BY player_count DESC;
+                </code></pre>
+            </div>
+
+            <div class="sql-example">
+                <h3>Categorising Transfer Fees</h3>
+                <p>Uses a <code>CASE</code> statement to categorise transfers into High, Medium and Low value brackets.</p>
+                <pre><code>
+                    SELECT
+                        player.first_name,
+                        player.last_name,
+                        transfer.transfer_value,
+                        CASE
+                            WHEN transfer.transfer_value >= 50000000 THEN 'High'
+                            WHEN transfer.transfer_value >= 35000000 THEN 'Medium'
+                            ELSE 'Low'
+                        END AS transfer_category
+                    FROM transfer
+                    JOIN player
+                    ON transfer.player_id = player.player_id;
+                </code></pre>
+            </div>
+        </section>
+
+        <!-- What I Learned -->
+        <section class="project-section">
+            <h2>What I Learned</h2>
+            <p>This project significantly improved my understanding of relational database design and reinforced the importance of planning before writing any SQL. Spending time designing the Entity Relationship Diagram first made the implementation process much smoother and highlighted how a well-structured database begins long before the first table is created.</p>
+            <p>I also gained a much deeper appreciation for database normalisation. Rather than storing duplicate information across multiple tables, I learned how primary keys, foreign keys and junction tables work together to create an efficient, scalable database structure while maintaining data integrity.</p>
+            <p>Writing SQL queries against data that I had designed myself was particularly rewarding. As the project progressed, I became increasingly comfortable using joins, aggregate functions, filtering and conditional logic to retrieve meaningful information from the database. Seeing those queries produce useful results helped reinforce the relationship between good database design and effective querying.</p>
+            <p>Looking back, this project gave me far more than experience writing SQL. It introduced me to the complete database development process—from planning and modelling to implementation, testing and querying—and has given me a much stronger foundation for future back-end development projects.</p>
+        </section>
+
+        <!-- Project Status -->
+        <section class="project-section">
+            <h2>Project Status</h2>
+        
+            <div class="project-status">
+                <div class="status-item">
+                    <h3>Status</h3>
+                    <p>✅ Completed</p>
+                </div>
+                
+                <div class="status-item">
+                    <h3>Completed</h3>
+                    <p>August 2026</p>
+                </div>
+
+                <div class="status-item">
+                    <h3>Career Path Module</h3>
+                    <p>Codecademy Full-Stack Career Path<br>Back-End Development</p>
+                </div>
+
+                <div class="status-item">
+                    <h3>Repository</h3>
+                    <p><a href="https://github.com/SamMeade24/arsenal-club-database" target="_blank" rel="noopener">View on GitHub</a></p>
+                </div>
+            </div>
+
+            <h3>Technologies Used</h3>
+
+            <div class="tech-stack">
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Postbird</span>
+                <span class="tech-tag">DBML</span>
+                <span class="tech-tag">dbdiagram.io</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">GitHub</span>
+            </div>
+        </section>
+
+        <!-- Explore More Projects -->
+        <section class="project-navigation">
+            <h2>Explore More Projects</h2>
+            <p>Interested in seeing more of my work? Browse my other Codecademy projects and follow my development journey.</p>
+
+            <div class="project-buttons">
+                <a href="./projects.html" class="hero-button">View All Projects</a>
+                <a href="./blog.html" class="hero-button">Read My Blog</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="social-icons">
+            <h2>MadeByMeade</h2>
+            <a href="https://www.linkedin.com/in/sammeade/" target="_blank" aria-label="Linkedin">
+                <img src="./Images/linkedin-icon.png" class="agency-icon" alt="Linkedin icon" />
+            </a>
+            <a href="https://github.com/SamMeade24" target="_blank" aria-label="GitHub">
+                <img src="./Images/GitHub-icon.png" class="agency-icon" alt="GitHub icon" />
+            </a>
+            <a href="mailto:sammeade1990@outlook.com" target="_blank" aria-label="Email">
+                <img src="./Images/email-icon.png" class="agency-icon" alt="Email icon" title="Email" />
+            </a>
+        </div>
+
+        <div class="web-signature">
+            <div id="copyright">
+                <h5>© MadeByMeade 2025</h5>
+            </div>
+
+            <div id="agency-signature">
+                <h5><a href="https://www.linkedin.com/in/sammeade/" target="_blank">Built and documented by Sam Meade</a></h5>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    
